@@ -1,0 +1,30 @@
+//quadratic equations
+
+#include <cmath>
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	double a,b,c;
+	cin >> a >> b >>c;
+
+    double result1, result2;
+    if (((b*b) -(4*a*c)) > 0){
+    result1 = ((-b + sqrt((b*b) -(4*a*c)))/(2*a));
+    result2 = ((-b - sqrt((b*b) -(4*a*c)))/(2*a));
+    if (result1 == result2)
+		{
+			cout << result1;
+		}
+		else
+			{
+			cout << result1 << " "<< result2;
+			}
+
+    }
+
+
+
+	return 0;
+}
