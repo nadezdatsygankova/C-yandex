@@ -1,0 +1,30 @@
+
+
+//cost, new price with discount
+#include <iostream>
+using namespace std;
+
+int main() {
+	double n,a,b,x,y;
+	cin >> n >> a >> b >> x >> y;
+	double result, result2;
+
+	if (a<b){
+		if (n > b ){
+		  result2 = n-((n*y)/100);
+		  cout << result2;
+			   }
+		else if (n > a){
+		 result = n-((n*x)/100);
+		 cout << result;
+	   }
+
+
+       if ((n < a) && (n < b)){
+			cout << n;
+		}
+
+	}
+
+	return 0;
+}
