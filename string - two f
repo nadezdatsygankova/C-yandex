@@ -1,0 +1,33 @@
+//string - the second f
+
+
+#include <string>
+#include <cstring>
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i,count;
+	count =0;
+	string a;
+	cin >> a;
+	for(i=0;i<a.length();i++){
+		if (a[i] =='f'){
+			count= count+1;
+		
+	    		if (count == 2){
+		    		cout << i;
+		    	}
+        }
+	}
+			if (count ==1){
+				cout <<-1;
+			}
+			else if (count == 0){
+				cout <<-2;
+			}
+
+
+
+	return 0;
+}
